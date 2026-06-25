@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+
+  --color-teal-deep: #02494a;
+  --color-teal-deep-700: #035d5e;
+  --color-teal-accent: #2fbabc;
+  --color-teal-accent-soft: #7fd6cf;
+  --color-ink: #0b1f1f;
+  --color-muted: #5b6b6b;
+  --color-cloud: #f6f8f8;
+  --color-cloud-200: #eef3f3;
+  --color-line: #e3eaea;
+
+  --radius-card: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #ffffff;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Soft radial teal glow accents */
+.glow-teal {
+  background: radial-gradient(
+    circle at center,
+    rgba(47, 186, 188, 0.18) 0%,
+    rgba(47, 186, 188, 0.06) 38%,
+    rgba(47, 186, 188, 0) 70%
+  );
+}
+
+.glow-teal-strong {
+  background: radial-gradient(
+    circle at center,
+    rgba(47, 186, 188, 0.28) 0%,
+    rgba(47, 186, 188, 0.08) 45%,
+    rgba(47, 186, 188, 0) 72%
+  );
+}
+
+/* Asymmetric corner card */
+.r-asym {
+  border-radius: 24px 24px 24px 64px;
+}
+.r-asym-r {
+  border-radius: 24px 24px 64px 24px;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+/* Subtle float for hero glow */
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.floaty {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track {
+    animation: none;
+  }
+  .floaty {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus ring for keyboard users */
+:where(a, button, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-teal-accent);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
