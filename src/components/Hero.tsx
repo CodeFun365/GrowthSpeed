@@ -13,7 +13,7 @@ const marselleMessages = [
   "Writes and schedules your weekly email newsletter automatically.",
   "Analyzes competitor content and finds your next opportunity.",
   "Publishes SEO articles tuned to what your audience is searching.",
-];
+];h
 
 /* Stat cards with distinct colors */
 const statCards = [
@@ -175,7 +175,7 @@ export default function Hero() {
                 placeholder="you@company.com"
                 className="h-12 flex-1 rounded-full border border-[#e3eaea] bg-white px-5 text-sm text-[#0b1f1f] placeholder:text-[#9aaaaa] focus:border-[#2FBABC] focus:outline-none focus:ring-2 focus:ring-[#2FBABC]/30"
               />
-              <CtaButton onClick={undefined} href="/start" className="h-12 shrink-0">
+              <CtaButton onClick={undefined} href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform" className="h-12 shrink-0">
                 {submitting ? "Sending..." : "Start your free trial"}
               </CtaButton>
             </form>
