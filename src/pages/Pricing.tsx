@@ -261,7 +261,7 @@ export default function Pricing() {
                   </p>
 
                   <a
-                    href="/start"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform"
                     className={`mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 ${
                       plan.featured
                         ? "bg-[#2FBABC] text-[#02494A] hover:bg-[#7fd6cf] hover:-translate-y-0.5"
