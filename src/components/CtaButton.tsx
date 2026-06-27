@@ -10,7 +10,7 @@ type Props = {
 
 export default function CtaButton({
   children,
-  href = "/start",
+    href = "https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform",
   variant = "primary",
   className = "",
   onClick,
