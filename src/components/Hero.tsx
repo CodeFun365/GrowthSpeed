@@ -154,7 +154,7 @@ export default function Hero() {
             </p>
           </Reveal>
 
-          <Reveal delay={240}>
+          <Reveal delay={240} className="hidden sm:block">
             <form
               onSubmit={submit}
               className="mt-7 flex flex-col gap-3 sm:max-w-md sm:flex-row"
@@ -181,7 +181,7 @@ export default function Hero() {
             </form>
           </Reveal>
 
-          <Reveal delay={300}>
+          <Reveal delay={300} className="hidden sm:block">
             <p className="mt-3 text-xs font-medium text-[#7d8d8d]">
               14 days free · No credit card · Cancel anytime
             </p>
@@ -193,7 +193,7 @@ export default function Hero() {
             </p>
           )}
 
-          <Reveal delay={360}>
+          <Reveal delay={360} className="hidden sm:block">
             <div className="mt-10">
               <p className="text-xs font-semibold uppercase tracking-wider text-[#9aaaaa]">
                 Trusted by founders at
