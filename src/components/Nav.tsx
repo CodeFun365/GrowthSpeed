@@ -69,7 +69,7 @@ export default function Nav() {
         </ul>
 
         <div className="hidden md:block">
-          <CtaButton href="/start" className="px-5 py-2.5">
+          <CtaButton href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform" className="px-5 py-2.5">
             Start your free trial
           </CtaButton>
         </div>
@@ -108,7 +108,7 @@ export default function Nav() {
               ))}
             </ul>
             <div className="mt-3 px-1">
-              <CtaButton href="/start" className="w-full">
+              <CtaButton href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform" className="w-full">
                 Start your free trial
               </CtaButton>
             </div>
