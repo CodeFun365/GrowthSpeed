@@ -47,7 +47,7 @@ export default function Founder() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <CtaButton href="/start">Start your free trial</CtaButton>
+              <CtaButton href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform">Start your free trial</CtaButton>
               <a
                 href="https://www.linkedin.com/in/deepanshubhatnagar/"
                 target="_blank"
