@@ -74,7 +74,7 @@ export default function Differentiator() {
         </Reveal>
 
         <Reveal delay={200} className="mt-10">
-          <CtaButton href="/start">Start your free trial</CtaButton>
+          <CtaButton href="https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform">Start your free trial</CtaButton>
         </Reveal>
       </div>
     </section>
