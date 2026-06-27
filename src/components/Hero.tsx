@@ -193,23 +193,6 @@ export default function Hero() {
             </p>
           )}
 
-          <Reveal delay={360} className="hidden sm:block">
-            <div className="mt-10">
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#9aaaaa]">
-                Trusted by founders at
-              </p>
-              <ul className="mt-4 flex flex-wrap items-center gap-x-7 gap-y-3">
-                {trustLogos.map((name) => (
-                  <li
-                    key={name}
-                    className="text-sm font-bold tracking-tight text-[#9aaaaa]"
-                  >
-                    {name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
         </div>
 
         {/* Right — dynamic glassmorphism dashboard */}
