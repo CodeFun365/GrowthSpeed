@@ -13,7 +13,7 @@ const marselleMessages = [
   "Writes and schedules your weekly email newsletter automatically.",
   "Analyzes competitor content and finds your next opportunity.",
   "Publishes SEO articles tuned to what your audience is searching.",
-];h
+];
 
 /* Stat cards with distinct colors */
 const statCards = [
