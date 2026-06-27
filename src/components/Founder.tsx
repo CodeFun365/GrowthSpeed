@@ -9,11 +9,11 @@ export default function Founder() {
           {/* Photo */}
           <Reveal className="relative mx-auto w-full max-w-sm lg:mx-0">
             <div className="pointer-events-none absolute -inset-5 glow-teal rounded-[40px]" aria-hidden="true" />
-            <div className="relative r-asym overflow-hidden border border-[#e3eaea] bg-[#F6F8F8]">
+                      <div className="relative rounded-2xl sm:r-asym overflow-hidden border border-[#e3eaea] bg-[#F6F8F8]">
               <img
                 src="/images/founder.jpg"
                 alt="Deepanshu, founder of GrowthSpeed"
-                className="aspect-[4/5] w-full object-cover"
+                            className="aspect-square sm:aspect-[4/5] w-full object-cover object-top"
                 loading="lazy"
               />
             </div>
