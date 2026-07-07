@@ -69,7 +69,7 @@ export default function StartTrial() {
       return;
     }
 
-    setSubmitted(true);
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform";
   };
 
   if (submitted) {
