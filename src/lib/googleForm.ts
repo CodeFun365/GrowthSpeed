@@ -66,3 +66,72 @@ export function submitToGoogleForm(email: string): Promise<void> {
     }
   });
 }
+
+
+  /**
+ * Submits the StartTrial page form data to the connected Google Form.
+ * Uses a hidden iframe technique so the browser doesn't navigate away.
+ *
+ * @param data - The form field values from the StartTrial page
+ * @returns Promise that resolves when submission is sent
+ */
+export function submitStartTrialForm(data: {
+    name: string;
+    email: string;
+    contact: string;
+    industry: string;
+    preferredTime: string;
+}): Promise<void> {
+    return new Promise((resolve, reject) => {
+          try {
+                  const iframeName = `gform-start-${Date.now()}`;
+                  const iframe = document.createElement("iframe");
+                  iframe.name = iframeName;
+                  iframe.id = iframeName;
+                  iframe.style.display = "none";
+                  iframe.setAttribute("aria-hidden", "true");
+                  document.body.appendChild(iframe);
+
+            const form = document.createElement("form");
+                  form.method = "POST";
+                  form.action = GOOGLE_FORM_ACTION;
+                  form.target = iframeName;
+                  form.style.display = "none";
+
+            const fields: Record<string, string> = {
+                      "entry.1378752842": data.email,
+                      "entry.2011229767": data.name,
+                      "entry.1193646058": data.contact,
+                      "entry.234928562": data.industry,
+                      "entry.1452190241": data.preferredTime,
+            };
+
+            Object.entries(fields).forEach(([name, value]) => {
+                      const input = document.createElement("input");
+                      input.type = "text";
+                      input.name = name;
+                      input.value = value;
+                      form.appendChild(input);
+            });
+
+            const submitFlag = document.createElement("input");
+                  submitFlag.type = "hidden";
+                  submitFlag.name = "fvv";
+                  submitFlag.value = "1";
+                  form.appendChild(submitFlag);
+
+            document.body.appendChild(form);
+                  form.submit();
+
+            setTimeout(() => {
+                      document.body.removeChild(form);
+                      document.body.removeChild(iframe);
+                      resolve();
+            }, 2500);
+          } catch (err) {
+                  reject(err);
+          }
+    });
+}
+});
+}
