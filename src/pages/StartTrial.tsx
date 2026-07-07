@@ -3,6 +3,7 @@ import Reveal from "../components/Reveal";
 import { Link } from "react-router-dom";
 import SaplingLogo from "../components/SaplingLogo";
 import GrowthSpeedLogo from "../components/GrowthSpeedLogo";
+import { submitStartTrialForm } from "../lib/googleForm";
 
 const industries = [
   "SaaS / Software",
@@ -69,7 +70,7 @@ export default function StartTrial() {
       return;
     }
 
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeng0BLDvHeKtSxoWX41kt5_CCFBwR6RlLV4DS5M6QJ36tMaw/viewform";
+    submitStartTrialForm({ name: form.name, email: form.email, contact: form.contact, industry: form.industry, preferredTime: form.preferredTime }).catch((err) => console.error("Failed to submit to Google Form:", err)); setSubmitted(true);
   };
 
   if (submitted) {
