@@ -36,7 +36,7 @@ export default function Benefits() {
             Why founders choose us
           </p>
           <h2 className="mt-3 text-[28px] font-extrabold tracking-tight text-[#0b1f1f] sm:text-[40px]">
-            Marketing handled the way you'd handle it yourself
+                          Marketing custom build as per your business requirements
           </h2>
         </Reveal>
 
