@@ -6,26 +6,7 @@ const metrics = [
   { v: "48h", k: "From kickoff to first live campaign" },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "I stopped worrying about marketing entirely. The team just keeps shipping, and the numbers keep climbing.",
-    name: "Amara Okafor",
-    role: "Founder, Pebble",
-  },
-  {
-    quote:
-      "It feels like having a senior marketing team in-house, without the overhead. Marselle AI is genuinely impressive.",
-    name: "Daniel Reyes",
-    role: "CEO, Lumen",
-  },
-  {
-    quote:
-      "Warm, thoughtful, and fast. They sound like us, and our customers notice. Best decision we made this year.",
-    name: "Sofia Marchetti",
-    role: "Founder, Cassia",
-  },
-];
+const testimonials = [];
 
 export default function ProofBand() {
   return (
