@@ -6,8 +6,6 @@ const metrics = [
   { v: "48h", k: "From kickoff to first live campaign" },
 ];
 
-const testimonials = [];
-
 export default function ProofBand() {
   return (
     <section className="relative overflow-hidden bg-[#02494A] py-20 text-white sm:py-28">
@@ -38,37 +36,6 @@ export default function ProofBand() {
             </Reveal>
           ))}
         </dl>
-
-        <ul className="mt-6 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <Reveal as="li" key={t.name} delay={i * 100}>
-              <figure className="flex h-full flex-col rounded-[24px] border border-white/10 bg-white p-6 text-[#0b1f1f] sm:p-7">
-                <svg className="text-[#2FBABC]" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M9 7H5a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2H4v2h1a4 4 0 004-4V9a2 2 0 00-2-2zm10 0h-4a2 2 0 00-2 2v4a2 2 0 002 2h2v2a2 2 0 01-2 2h-1v2h1a4 4 0 004-4V9a2 2 0 00-2-2z" />
-                </svg>
-                <blockquote className="mt-4 flex-1 text-[15px] leading-relaxed text-[#0b1f1f]">
-                  "{t.quote.split("Marselle AI").map((part, idx, arr) => (
-                    <span key={idx}>
-                      {part}
-                      {idx < arr.length - 1 && (
-                        <span className="font-semibold text-[#2FBABC]">Marselle AI</span>
-                      )}
-                    </span>
-                  ))}"
-                </blockquote>
-                <figcaption className="mt-6 flex items-center gap-3 border-t border-[#e3eaea] pt-4">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#02494A] text-sm font-bold text-[#2FBABC]">
-                    {t.name.charAt(0)}
-                  </span>
-                  <span>
-                    <span className="block text-sm font-bold text-[#0b1f1f]">{t.name}</span>
-                    <span className="block text-xs text-[#7d8d8d]">{t.role}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </ul>
       </div>
     </section>
   );
