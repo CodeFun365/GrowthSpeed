@@ -11,6 +11,7 @@ import Differentiator from "./components/Differentiator";
 import ProofBand from "./components/ProofBand";
 import Founder from "./components/Founder";
 import Security from "./components/Security";
+import Faq from "./components/Faq";
 import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
 import Pricing from "./pages/Pricing";
@@ -29,6 +30,7 @@ function HomePage() {
       <ProofBand />
       <Founder />
       <Security />
+      <Faq />
       <FinalCta />
     </>
   );
